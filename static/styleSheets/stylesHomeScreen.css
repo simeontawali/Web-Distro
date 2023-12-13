@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+}
+
+.navbar{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border: 8px solid burlywood;
+    margin: 0;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    color: #555;
+}
+p{
+    color: #555;
+}
+.container{
+    max-width: 1800px;
+    margin: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 0px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+    max-height: 500px;
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+    max-height: 500px;
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+#quiz-btn:hover{
+    background: white;
+    color: burlywood;
+}
+#quiz-btn{
+    display: inline-block;
+    background: burlywood;
+    color: white;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 4px solid;
+    transition: 0.5s;
+}
+.header{
+    background: radial-gradient(white,burlywood);
+}
+.featured-products{
+    margin: 20px 0;
+    border-radius: 12px solid black;
+}
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.col-3 img{
+    width: 100%;
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.small-container h2{
+    margin: auto;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+.featured-title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: black;
+}
+.featured-title:after{
+    content: '';
+    background: black;
+    width: 350px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+}

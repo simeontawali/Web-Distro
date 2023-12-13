@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Beans on Demand</title>
+
+    <!--Import Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+     rel="stylesheet" crossorigin="anonymous"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9">
+  
+    <script defer crossorigin="anonymous"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"></script>
+
+      <link rel="stylesheet" href="/static/styleSheets/styleWelcomeScreen.css">
+</head>
+<body class="main-background">
+    <div class="col-6 justify-content-center p-5 m-auto" width="100%">
+        <h1>Welcome to Beans on Demand</h1>
+        <br>
+        <img class="center" src="/static/images/bean_logo.jpg" width="250px">
+    </div>
+
+    <div class="container">
+        <div class="row card-row align-items-center">
+        <div class="col-sm-12 col-md-3 col-lg-3 offset-2 p-2 justify-content-center">
+            <div class="card" style="width: 18rem">
+                <div class="card-body">
+                    <h5 class="card-title">Sign in</h5>
+                    <p class="card-text">Sign in to your profile and start browsing!</p>
+                    <a href="/login" class="btn btn-primary">Go and Sign in</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-md-4 col-lg-4 offset-1 p-3 justify-content-center">
+            <div class="card" style="width: 18rem">
+                <div class="card-body">
+                    <h5 class="card-title">Sign up</h5>
+                    <p class="card-text">Sign up to make your free profile today!</p>
+                    <a href="/register" class="btn btn-primary">Go and Sign up</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>

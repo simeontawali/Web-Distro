@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/styleSheets/stylesHomeScreen.css">
+
+    <!--Import Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9">
+
+    <script defer crossorigin="anonymous"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"></script>
+
+    <link rel="stylesheet" href="/static/styleSheets/stylesHomeScreen.css">
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="/static/images/logo.jpg" width="125px">
+            </div>
+            <nav>
+                <ul>
+                    <li><p>User: {{current_user.fname}}</p></li>
+                    <li><a href="/Account">Account</a></li>
+                    <li><a href="/About">About</a></li>
+                    <li><a href="/home">Back to Home</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    <div class="container" id="users">
+        <div class="row card-row align-items-center">
+            {% for user in users %}
+            <div class="col-sm-12 col-md-4 col-lg-3 offset-1 p-3 justify-content-center">
+                <div class="card" style="width: 16rem">
+                    <div class="card-body">
+                        <img src="/static/images/blank_profile.jpg" width="150px">
+                        <h5>{{user.fname}} {{user.lname}}</h5>
+                        {% if user.isAdmin == 1 %}
+                        <h5>{{user.fname}} is an admin</h5>
+                        {% else %}
+                        <h5>{{user.fname}} is not an admin</h5>
+                        {% endif %}
+                        <a href="/login" class="btn btn-success p-2">Make an Admin</a>
+                        <a href="/login" class="btn btn-danger p-2">Revoke Admin Privilage</a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            {% endfor %}
+            
+
+
+        </div>
+
+</body>
+
+</html>
